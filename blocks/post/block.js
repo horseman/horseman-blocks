@@ -1,5 +1,11 @@
-import { Component } from '@wordpress/element';
-import { withAPIData } from '@wordpress/components';
+const {
+	Component,
+} = wp.element;
+
+const {
+	withAPIData,
+} = wp.components;
+
 import styled from 'styled-components';
 
 import Post from "./post";

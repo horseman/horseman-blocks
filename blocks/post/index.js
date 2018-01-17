@@ -1,9 +1,4 @@
 /**
- * WordPress dependencies
- */
-import { __ } from '@wordpress/i18n';
-
-/**
  * Internal dependencies
  */
 const {
@@ -17,11 +12,11 @@ const {
 import Post from './block';
 
 registerBlockType( 'horseman/post', {
-	title: __( 'Horseman Post' ),
-	description: __( 'Picks a single post title' ),
+	title: 'Horseman Post',
+	description: 'Picks a single post title' ,
 	icon: 'list-view',
 	category: 'widgets',
-	keywords: [ __( 'posts' ) ],
+	keywords: [ 'posts' ],
 	supports: {
 		html: false,
 	},

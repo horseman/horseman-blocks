@@ -1,5 +1,7 @@
 // import React from "react";
-import { withAPIData } from '@wordpress/components';
+const {
+	withAPIData,
+} = wp.components;
 
 const Post = ( { post } ) => {
 	if ( typeof post.data === 'undefined' ) {
