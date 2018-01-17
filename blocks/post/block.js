@@ -1,3 +1,7 @@
+import styled from 'styled-components';
+
+import Post from "./post";
+
 const {
 	Component,
 } = wp.element;
@@ -6,14 +10,13 @@ const {
 	withAPIData,
 } = wp.components;
 
-import styled from 'styled-components';
-
-import Post from "./post";
-
 const {
     InspectorControls,
-    SelectControl
 } = wp.blocks;
+
+const {
+    SelectControl,
+} = InspectorControls;
 
 const Section = styled.div`
 	padding: 2em;

@@ -1277,17 +1277,14 @@ registerBlockType('horseman/post', {
 
 var _templateObject = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_helpers_taggedTemplateLiteral___default()(['\n\tpadding: 2em;\n\tbackground: #dfdfdf;\n'], ['\n\tpadding: 2em;\n\tbackground: #dfdfdf;\n']);
 
+
+
+
+
 var Component = wp.element.Component;
 var withAPIData = wp.components.withAPIData;
-
-
-
-
-
-
-var _wp$blocks = wp.blocks,
-    InspectorControls = _wp$blocks.InspectorControls,
-    SelectControl = _wp$blocks.SelectControl;
+var InspectorControls = wp.blocks.InspectorControls;
+var SelectControl = InspectorControls.SelectControl;
 
 
 var Section = __WEBPACK_IMPORTED_MODULE_6_styled_components__["a" /* default */].div(_templateObject);
@@ -7769,7 +7766,9 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// import React from "react";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
 var withAPIData = wp.components.withAPIData;
 
 
@@ -7778,29 +7777,29 @@ var Post = function Post(_ref) {
 
 	if (typeof post.data === 'undefined') {
 		return wp.element.createElement(
-			'div',
+			"div",
 			null,
-			'Loading...'
+			"Loading..."
 		);
 	}
 	return wp.element.createElement(
-		'div',
+		"div",
 		null,
 		wp.element.createElement(
-			'h1',
+			"h1",
 			null,
 			post.data.title.rendered
 		),
 		wp.element.createElement(
-			'div',
+			"div",
 			null,
-			'Basic: ',
+			"Basic: ",
 			post.data.acf.basic
 		),
 		wp.element.createElement(
-			'div',
+			"div",
 			null,
-			'Number: ',
+			"Number: ",
 			post.data.acf.number
 		)
 	);
@@ -7809,7 +7808,7 @@ var Post = function Post(_ref) {
 var LoadPost = function LoadPost(_ref2) {
 	var postId = _ref2.postId;
 	return {
-		post: '/wp/v2/posts/' + postId
+		post: "/wp/v2/posts/" + postId
 	};
 };
 

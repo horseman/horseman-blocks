@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Horsemane Gutenberg Blocks 
+ * Plugin Name: Horsemane Gutenberg Blocks
  * Plugin URI: https://horseman.io
- * Description: A collection of blocks to be used both in the backend and 
+ * Description: A collection of blocks to be used both in the backend and
  * front end of wordpress
  * Author: DevCave
  * Author URI: https://devcave.io
@@ -47,7 +47,7 @@ if ( ! defined( 'HB_URL' ) ) {
 function register_horseman_blocks() {
     wp_enqueue_script(
                 'horseman-blocks',
-                plugins_url( 'blocks/index.js', __FILE__ ),
+                plugins_url( 'blocks/build.js', __FILE__ ),
                 array( 'wp-blocks', 'wp-element' )
     );
 }
