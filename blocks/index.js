@@ -1,1 +1,1 @@
-import './post';
+import './MediaBlock';
