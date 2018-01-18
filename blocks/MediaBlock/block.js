@@ -1,5 +1,3 @@
-import Picture from './Picture';
-
 const {
     Component,
 } = wp.element;
@@ -52,6 +50,19 @@ class MediaBlock extends Component {
                 <h3>Upload an Image</h3>
             ];
         }
+
+		// Currently there is an incompabtibility with the element resize
+		// detector library. This resolves this problem for now.
+		// Issue: https://github.com/maslianok/react-resize-detector/issues/22
+		if(document.body === null){
+			return [
+				controls,
+				<h3>Loading</h3>
+			];
+		}
+
+		const HC = require("horseman-components");
+		const { Picture } = HC;
 
         return [
             controls,
