@@ -47,7 +47,7 @@ if ( ! defined( 'HB_URL' ) ) {
 function register_horseman_blocks() {
     wp_enqueue_script(
                 'horseman-blocks',
-                plugins_url( 'blocks/build.js', __FILE__ ),
+                plugins_url( 'dist/index.js', __FILE__ ),
                 array( 'wp-blocks', 'wp-element' )
     );
 }

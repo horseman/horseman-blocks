@@ -38,8 +38,6 @@ class PostControl extends Component {
 				selected: postId == post.id,
 			} )
 		);
-		console.log("options", options);
-		console.log("postId", postId);
 		options.unshift({label: "Select a Post", value: null});
 
 		return [
