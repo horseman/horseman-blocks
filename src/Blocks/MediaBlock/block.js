@@ -20,7 +20,6 @@ class MediaBlock extends Component {
     render(){
         const { setAttributes, attributes } = this.props;
         const onSelectImage = ( media ) => {
-            console.log("media",media);
             const attributes = { src: media.url, alt: media.alt, id: media.id, sizes: media.sizes };
             if ( media.caption ) {
                 attributes.caption = [ media.caption ];

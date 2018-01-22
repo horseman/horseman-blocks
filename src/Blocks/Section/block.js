@@ -13,7 +13,6 @@ const {
     SelectControl,
 } = InspectorControls;
 
-console.log("Select", SelectControl);
 
 class Block extends Component {
     render(){
