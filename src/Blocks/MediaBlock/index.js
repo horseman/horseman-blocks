@@ -1,41 +1,28 @@
-const {
-	registerBlockType,
-	Editable,
-	BlockControls,
-	AlignmentToolbar,
-	source
-} = wp.blocks;
+import setupBlock from '../../helpers/setupBlock';
+import Edit from './Edit';
+import MediaBlock from "./MediaBlock";
 
-import Block from './block';
-
-registerBlockType( 'horseman/mediablock', {
+setupBlock({
+	blockName:'horseman/media-block',
 	title: 'Media Block',
-	description: 'Combines a text column with a media block' ,
-	icon: 'format-image',
+	description: 'Combine a Media element with a Text Element' ,
+	icon: 'archive',
 	category: 'common',
-	keywords: [ 'posts' ],
-	supports: {
-		html: false,
-	},
+	keywords: [ 'section' ],
 	attributes: {
-		id: {
-			type: 'number',
-		},
-		src: {
+		wide: {
 			type: 'string',
 		},
-		alt: {
+		mediaLocation: {
 			type: 'string',
 		},
-		sizes: {
-			type: 'object',
-		},
-		content: {
+		url: {
 			type: 'string',
+		},
+		text: {
+			type: 'array',
 		},
 	},
-	edit: Block,
-	save() {
-		return null;
-	},
+	edit: Edit,
+	save: MediaBlock,
 } );

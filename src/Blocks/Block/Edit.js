@@ -1,6 +1,5 @@
 import React from "react";
 
-import connected from "../../helpers/connected";
 import Section from "./Section";
 
 const Blocks = ({ id, setAttributes, attributes, saveStyles }) => {
@@ -15,4 +14,4 @@ const Blocks = ({ id, setAttributes, attributes, saveStyles }) => {
 
 };
 
-export default connected(Blocks);
+export default Blocks;

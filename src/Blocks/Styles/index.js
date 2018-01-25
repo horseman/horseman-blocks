@@ -17,7 +17,7 @@ setupBlock({
 		}
 	},
 	edit: Edit,
-	save: ({ attributes }) => {
+	saveOverride: ({ attributes }) => {
 		setupReducer();
 		return <Save {...attributes} />;
 	}

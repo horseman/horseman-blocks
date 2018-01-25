@@ -15,5 +15,5 @@ setupBlock({
 		},
 	},
 	edit: Edit,
-	SaveComponent: Section,
+	save: Section,
 } );
