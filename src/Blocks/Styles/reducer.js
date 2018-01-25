@@ -7,7 +7,10 @@ const setupReducer = () => {
 	const horsemanReducer = ( state = {}, action ) => {
 		switch (action.type) {
 			case 'SAVE_STYLES':
-				return { styles: action.styles };
+				const newStyles = state.horsemanBlocks && state.horsemanBlocks.styles ?
+					state.horsemanBlocks.styles + action.styles :
+					action.styles;
+				return { styles: newStyles };
 				break;
 			case 'CLEAR_STYLES':
 				return { styles: null};
