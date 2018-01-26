@@ -4,6 +4,7 @@ const {
 } = wp.blocks;
 
 import Block from './block';
+import Section from './Section';
 
 registerBlockType( 'horseman/section', {
 	title: 'Section',

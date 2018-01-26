@@ -49,7 +49,14 @@ class Block extends Component {
 		</InspectorControls>);
         return [
 			controls,
-			<Section {...attributes}><InnerBlocks /></Section>,
+			<Section {...attributes}>
+				<InnerBlocks
+					layouts={{
+						normal: { label: 'Normal Width', icon: 'align-center' },
+						wide: { label: 'Width Width', icon: 'align-wide' },
+					}}
+				/>
+			</Section>,
 		];
 
     }
