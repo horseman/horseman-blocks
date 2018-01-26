@@ -1,1 +1,2 @@
 import './MediaBlock';
+import './TextBlock';
