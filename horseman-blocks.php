@@ -40,6 +40,9 @@ if ( ! defined( 'HB_URL' ) ) {
 	define( 'HB_URL', WP_PLUGIN_URL . '/' . HB_NAME );
 }
 
+add_theme_support( 'align-wide' );
+add_theme_support( 'align-full' );
+
 /**
  * Load Blocks
  */
